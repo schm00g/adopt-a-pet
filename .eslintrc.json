@@ -3,9 +3,14 @@
         "eslint:recommended",
         "plugin:import/errors",
         "plugin:react/recommended",
+        "plugin:react-hooks/recommended",
         "plugin:jsx-a11y/recommended",
         "prettier"
     ],
+    "rules": {
+        "react/props-types": 0,
+        "react/react-in-jsx-scope": 0
+    },
     "plugins": [
         "react",
         "import",
@@ -22,5 +27,10 @@
         "es6": true,
         "browser": true,
         "node": true
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
     }
 }
