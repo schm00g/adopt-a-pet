@@ -4,11 +4,7 @@ import { useParams } from "react-router-dom";
 // cannot use hooks with classes
 
 class Details extends Component {
-  constructor(props) {
-    super(props);
-    // <this> is the instance of Detail
-    this.state = { loading: true };
-  }
+  state = { loading: true };
 
   async componentDidMount() {
     const res = await fetch(
